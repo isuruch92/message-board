@@ -1,0 +1,25 @@
+.channelHeader {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-light--2);
+  height: 54px;
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border--dark);
+  gap: 12px;
+}
+
+.name {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.back {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.back:hover {
+  background-color: var(--color-white);
+  border-radius: 50%;
+}

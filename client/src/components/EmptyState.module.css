@@ -1,0 +1,48 @@
+.emptyStateContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.emptyStateFillHeight {
+  height: calc(100vh - 258px);
+}
+
+.emptyStateTitle {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.emptyStateSubtitle {
+  font-size: 20px;
+  font-style: italic;
+}
+
+.greetingText {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .emptyStateContainer {
+    text-align: center;
+    height: calc(100vh - 312px);
+  }
+
+  .emptyStateTitle {
+    font-size: 22px;
+  }
+
+  .emptyStateSubtitle {
+    font-size: 16px;
+  }
+
+  .greetingText {
+    font-size: 22px;
+  }
+}

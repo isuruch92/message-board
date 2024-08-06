@@ -1,0 +1,14 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  overflow-y: auto;
+  height: calc(100vh - 258px);
+}
+
+@media (max-width: 768px) {
+  .messages {
+    height: calc(100vh - 312px);
+  }
+}

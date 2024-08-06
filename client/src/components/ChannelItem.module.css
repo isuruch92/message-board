@@ -1,0 +1,72 @@
+.channel {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  border-bottom: 1px solid var(--color-border--light);
+  padding: 12px 16px;
+  width: 100%;
+  font-size: 16px;
+  gap: 12px;
+  font-weight: 700;
+  background-color: var(--color-white);
+  color: #0c1d29;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.7s ease;
+}
+
+.channel:hover {
+  background-color: var(--color-hover--1);
+}
+
+.channel--active {
+  background-color: #78cdff73;
+  color: #1389ca;
+  border-left: 6px solid #3eaaff;
+}
+
+.channel--collapsed {
+  align-items: center;
+  padding: 10px 8px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.name {
+  margin-top: 4px;
+}
+
+.nameClip {
+  margin-top: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.description {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: #979494;
+}
+
+@media (max-width: 768px) {
+  .channel {
+    font-size: 20px;
+  }
+
+  .name,
+  .nameClip {
+    margin-top: 2px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+}

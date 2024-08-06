@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 24px;
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1px;
+  z-index: 15;
+  position: relative;
+}
+
+.logo {
+  width: 212px;
+  max-width: 212px;
+  height: 32px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+    max-width: none;
+  }
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  margin-left: 146px;
+  flex: 1;
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .search {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search {
+    margin-left: 0;
+  }
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #8cc5f8;
+  border: 3px solid #03b2ff;
+}

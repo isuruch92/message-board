@@ -1,0 +1,20 @@
+.resultsContainer {
+  min-width: 200px;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 500px) {
+  .resultsContainer {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 500px) {
+  .resultText {
+    display: none;
+  }
+}

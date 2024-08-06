@@ -1,0 +1,42 @@
+.app {
+  margin: 0 auto;
+  height: calc(100vh - 50px);
+}
+
+.main {
+  padding: 0;
+  overscroll-behavior-y: none;
+  display: flex;
+  position: relative;
+  height: calc(100vh - 140px);
+}
+
+.ResizeHandleOuter {
+  flex: 0 0 1.2em;
+  position: relative;
+  outline: none;
+  --background-color: rgb(246 246 246);
+}
+.ResizeHandleOuter[data-resize-handle-active] {
+  --background-color: rgba(180, 180, 180, 0.777);
+}
+
+.ResizeHandleInner {
+  position: absolute;
+  top: 0.25em;
+  bottom: 0.25em;
+  left: 0.25em;
+  right: 0.25em;
+  border-radius: 0.25em;
+  background-color: var(--background-color);
+  transition: background-color 0.2s linear;
+}
+
+.Icon {
+  width: 1.5em;
+  height: 1.5em;
+  position: absolute;
+  left: calc(50% - 0.8rem);
+  top: calc(50% - 0.65rem);
+  transform: rotate(90deg);
+}
